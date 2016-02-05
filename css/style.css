@@ -4,4 +4,20 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+  background-color: #ecf0f1;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-left: -10px; /* left margin not full width */
 }
