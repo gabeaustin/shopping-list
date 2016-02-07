@@ -1,3 +1,7 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
 html { 
   background: url(../images/store.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -7,17 +11,45 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-.nav {
+.container {
   background-color: #ecf0f1;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  top: 0px;
-  text-align: center;
-  padding: 10px;
+  width: 40%;
+  height: 450px;
+  border-radius: 13px;
   opacity: 0.8;
-  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.container-header {
+  font-weight: 800;
   font-size: 32px;
-  letter-spacing: 2px;
-  margin-left: -10px; /* left margin not full width */
+  text-align: center;
+  color: #c0392b;
+  padding: 15px;
+}
+
+.list-textbox p {
+  text-align: center;
+}
+
+input.item {
+  padding: 5px;
+  border: 1px solid #000;
+  width: 50%;
+  margin: 15px 0 5px 135px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.fa-plus {
+  padding: 15px;
+}
+
+input.listOfItemsCheckbox {
+  padding: 5px;
+  width: 5%;
+  margin: 15px 0 5px 135px;
+  font-weight: bolder;
+  font-size: 16px;
 }
