@@ -62,3 +62,11 @@ input.listOfItemsCheckbox {
 hr {
   width: 50%;
 }
+
+li {
+  list-style-position: inside;
+}
+
+.addedList {
+  text-decoration: line-through;
+}
