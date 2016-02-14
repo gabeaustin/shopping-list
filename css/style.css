@@ -53,3 +53,12 @@ input.listOfItemsCheckbox {
   font-weight: bolder;
   font-size: 16px;
 }
+
+.removeItem {
+  padding: 5px;
+  margin: 15px 0 5px 135px;
+}
+
+hr {
+  width: 50%;
+}

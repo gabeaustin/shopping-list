@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   </head>
 
@@ -19,10 +20,15 @@
         <p>Add items and remove items</p>
         <input type="text" class="item" name="inputBox" maxlength="30">
         <i class="fa fa-plus"></i>
-        <i class="fa fa-minus"></i>
       </div>
 
       <div class="listOfItems">
+        <div class="removeItem">
+          <i class="fa fa-trash-o"></i>
+        </div>
+
+        <hr>
+
         <ul>
           <li><input type="checkbox" class="listOfItemsCheckbox">Bread</li>
           <li><input type="checkbox" class="listOfItemsCheckbox">Milk</li>
@@ -33,6 +39,7 @@
     <script src="qunit/qunit-1.21.0.js"></script>
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
   </body>
 </html>
 
