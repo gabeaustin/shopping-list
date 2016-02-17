@@ -3,10 +3,15 @@
 // })
 
 $(document).ready(function() {
-  $( "input" )
-    .keyup(function() {
-      var value = $( this ).val();
-      $( "li" ).html( "<input type='checkbox'>" + value + "</input><br>" )
-      .addClass("listOfItemsCheckbox");
-    });
+
+  var listOfItems = [];
+  listOfItems.push(document.getElementById(listOfItems));
+
+  $( "addBtn" ).click(function() {
+    $( "li" ).append( "<input type='checkbox'>" + listOfItems + "</input>" )
+    .addClass("listOfItemsCheckbox");
+  });
+
 });
+
+
