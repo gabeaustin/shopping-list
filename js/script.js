@@ -27,14 +27,19 @@ $(document).ready(function() {
       $( "li" ).html( "<input type='checkbox' class='listOfItemsCheckbox'> " + value + " </input>" )
     });
 
-  $( "addBtn" ).click(function() {
-    $( "li" ).append(function() {
-      var listOfItems = [];
+  $( ".addBtn" ).click(function() {
+    var listOfItems = [];
 
       for (var i = 0; i < listOfItems.length; i++) {
+        if listOfItems[i] === $("input".val()) {
+          $("ul":first-of-type.remove())
+        }
+        // $( "li:first-of-type" ).append(function() {
+        //   $('ul').prepend( "<li></li>" );
+
+        // })
         console.log(listOfItems[i]);
       };
-    });
 
   });
 
