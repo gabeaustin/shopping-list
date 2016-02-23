@@ -21,25 +21,35 @@ $(document).ready(function() {
   //   console.log(listOfItems[i]);
   // };
 
-  $( "input" )
+  $("input")
     .keyup(function() {
-      var value = $( this ).val();
-      $( "li" ).html( "<input type='checkbox' class='listOfItemsCheckbox'> " + value + " </input>" )
+      var value = $(this).val();
+      $("li:first-of-type").html("<label for=" + value + "><input type='checkbox' class='listOfItemsCheckbox' id=" + value + ">" + value + "</label>")
     });
 
-  $( ".addBtn" ).click(function() {
+  $("input:checkbox").change(function(){
+    if ($(this).is(":checked")) {
+      $("li.listOfItems").addClass("addedList");
+    } else {
+      $("li.listOfItems").removeClass("addedList");
+    }
+  });
+
+  $(".addBtn").click(function() {
     var listOfItems = [];
 
       for (var i = 0; i < listOfItems.length; i++) {
-        if listOfItems[i] === $("input".val()) {
-          $("ul":first-of-type.remove())
+        if (listOfItems[i] === $("input").val()) {
+          $("li:first-of-type").remove()
         }
-        // $( "li:first-of-type" ).append(function() {
-        //   $('ul').prepend( "<li></li>" );
-
-        // })
-        console.log(listOfItems[i]);
       };
+        
+  $("ul").prepend("<li></li>");
+
+  $("input").val("").focus();
+
+        
+  // console.log(listOfItems[i]);
 
   });
 

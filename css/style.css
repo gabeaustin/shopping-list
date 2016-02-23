@@ -76,5 +76,6 @@ li {
 }
 
 .addedList {
+  list-style-position: inside;
   text-decoration: line-through;
 }
