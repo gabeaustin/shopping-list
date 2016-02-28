@@ -27,14 +27,6 @@ $(document).ready(function() {
       $("li:first-of-type").html("<label for=" + value + "><input type='checkbox' class='listOfItemsCheckbox' id=" + value + ">" + value + "</label>")
     });
 
-  $("input:checkbox").change(function(){
-    if ($(this).is(":checked")) {
-      $("li.listOfItems").addClass("addedList");
-    } else {
-      $("li.listOfItems").removeClass("addedList");
-    }
-  });
-
   $(".addBtn").click(function() {
     var listOfItems = [];
 
@@ -47,6 +39,26 @@ $(document).ready(function() {
   $("ul").prepend("<li></li>");
 
   $("input").val("").focus();
+
+  $(function() {
+    $("li").draggable();
+    $(".removeItem").droppable({
+      drop: function(event, ui) {
+        $(this)
+        .find("i")
+        .html("&nbsp; Item Removed!");
+      }
+    });
+  });
+
+  // needs work - below
+  $("input:checkbox").change(function(){
+    if ($(this).is(":checked")) {
+      $("li").addClass("addedList");
+    } else {
+      $("li").removeClass("addedList");
+    }
+  });
 
         
   // console.log(listOfItems[i]);
