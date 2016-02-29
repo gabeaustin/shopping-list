@@ -45,7 +45,7 @@ $(document).ready(function() {
     $(".removeItem").droppable({
       drop: function(event, ui) {
         $(this)
-        .find("i")
+        .find(".deleteTrashCan")
         .html("&nbsp; Item Removed!");
       }
     });
@@ -59,6 +59,31 @@ $(document).ready(function() {
       $("li").removeClass("addedList");
     }
   });
+
+
+  function removeItems(elem){
+    if(confirm("Are you sure you want to delete this?")){
+      elem.remove();
+    }
+  };
+
+  function itemClicked() {
+    $("item:checkbox");
+  };
+
+  function trashClicked() {
+    $(".deleteTrashCan").click();
+  };
+
+  if (itemClicked && trashClicked) {
+    removeItems($("li").find("input:checked").parent());
+  };
+
+  //delete checked items
+  // if ("li").click() && ("i").click()
+  // $("li").click(function() {
+  //   removeItems($("li").find("input:checked").parent());
+  // });
 
         
   // console.log(listOfItems[i]);
